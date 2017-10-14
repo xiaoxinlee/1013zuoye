@@ -64,8 +64,21 @@ html{
           background: #fff;
           box-sizing: border-box;
           border-top: 1px solid #e6e6e6;
+          display: flex;
+          justify-content: space-between;
           &:nth-child(1){
             @include mb;
+            div:last-child{
+              position: relative;
+              img{
+                width: 71/$sc+rem;
+                height: 71/$sc+rem;
+                border-radius: 50%;
+                position: absolute;
+                top: 17/$sc+rem;
+                right: 34/$sc+rem;
+              }
+            }
           }
           &:nth-child(3){
             @include mb;
@@ -75,11 +88,9 @@ html{
           }
           div{
             &:first-child{
-              float: left;
               color: #333;
             }
             &:last-child{
-              float: right;
               color: #666;
             }
           }

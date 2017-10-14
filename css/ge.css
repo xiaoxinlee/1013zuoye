@@ -51,10 +51,21 @@ html, html body {
           padding: 0 0.48rem;
           background: #fff;
           box-sizing: border-box;
-          border-top: 1px solid #e6e6e6; }
+          border-top: 1px solid #e6e6e6;
+          display: flex;
+          justify-content: space-between; }
           html body section ul li:nth-child(1) {
             border-top: none;
             margin-top: 20px; }
+            html body section ul li:nth-child(1) div:last-child {
+              position: relative; }
+              html body section ul li:nth-child(1) div:last-child img {
+                width: 1.42rem;
+                height: 1.42rem;
+                border-radius: 50%;
+                position: absolute;
+                top: 0.34rem;
+                right: 0.68rem; }
           html body section ul li:nth-child(3) {
             border-top: none;
             margin-top: 20px; }
@@ -62,10 +73,8 @@ html, html body {
             border-top: none;
             margin-top: 20px; }
           html body section ul li div:first-child {
-            float: left;
             color: #333; }
           html body section ul li div:last-child {
-            float: right;
             color: #666; }
 
 /*# sourceMappingURL=ge.css.map */
